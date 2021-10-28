@@ -1,0 +1,44 @@
+input{
+    box-shadow: none !important;
+}
+.input-box{
+    position: relative;
+    /* background: #222;  */
+    padding: 2px;
+}
+option{
+    padding-top: 1.2rem !important;
+    padding-bottom: 5.2rem !important;
+}
+
+.input-box > .text-input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0.5rem;
+    border: 0;
+    border-bottom: 2px solid rgb(86, 168, 245);
+    background: transparent;
+    z-index: 2;
+}
+.input-label{
+    user-select: none;
+    cursor: text;
+    color: rgb(250, 46, 46);
+    background: transparent;
+    transition: all 0.2s linear;
+    z-index: 11;
+}
+
+.text-input ~ .input-span{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 0%;
+    height: 10%;
+    transition: all 0.3s linear;
+}
+.text-input:focus ~ .input-span{
+    width: 100%;
+    background: rgb(61, 179, 247);
+}

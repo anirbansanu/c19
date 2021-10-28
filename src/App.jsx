@@ -1,10 +1,15 @@
-import Tracker from './pages/Tracker';
+import React, { Component } from 'react';
+import Dashboard from './pages/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
-function App() {
-  return (
-    <Tracker/>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <Dashboard />
+      </>
+    )
+  }
 }
 
-export default App;

@@ -1,0 +1,16 @@
+
+.container1-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1-col>.card{
+    box-shadow: none;
+    border: none;
+}
+.container1-col>img{
+    width: 92%;
+    height: 92%;
+    padding: 8% 8%;
+}
