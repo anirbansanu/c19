@@ -14,7 +14,7 @@ export default class Menus extends Component {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        <b>{this.props.appTitle}</b>
+                        <b style={{fontFamily:''}}>{this.props.appTitle}</b>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
