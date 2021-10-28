@@ -5,7 +5,7 @@ import Logo from '../../logo.svg';
 export default class Menus extends Component {
     render() {
         return (
-            <Navbar expand='md' className="p-2">
+            <Navbar expand='md' className="p-2 shadow mb-3">
                     <Navbar.Brand href="#home">
                         <img
                             alt=""

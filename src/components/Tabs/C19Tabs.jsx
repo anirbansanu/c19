@@ -13,6 +13,7 @@ export default class C19Tabs extends Component {
                     </Tab>
                     <Tab eventKey="By-PIN" title="By PIN">
                         <SelectInput label="Select" defaultOption='State' optionsArray={["West Bengal","Maharastra","J&K",'Ladak']}/>
+                        {/* <SelectInput label="Select" defaultOption='State' optionsArray={["West Bengal","Maharastra","J&K",'Ladak']}/> */}
                     </Tab>
                     
                 </Tabs>

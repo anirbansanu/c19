@@ -11,16 +11,16 @@ export default class Container1 extends Component {
             <>
                 <Container fluid className="container1">
                     <Row>
-                        <Col sm={{span: 12, order: 2 }} md={{span: 12, order: 1 }} lg={{span: 5, order: 1 }} className="container1-col" >
-                            <Card>
+                        <Col xs={{span: 12, order: 2 }} sm={{span: 12, order: 2 }} md={{span: 6, order: 1 }} lg={{span: 5, order: 1 }} className="container1-col" >
+                            <Card style={{width:"100%"}}>
                                 <Card.Body className="p-4">
                                     <Card.Title >
                                         <h2>India 🛡 defeat Covid-19</h2>
                                     </Card.Title>
                                     
-                                    <Card>
+                                    <Card style={{minHeight:"235px"}}>
                                         <Card.Body className="p-0">
-                                            <Card.Title style={{textAlign:'center'}}>
+                                            <Card.Title >
                                                 <h5>Search Your Nearest 💉 Vaccination Center</h5>
                                             </Card.Title>
                                             <C19Tabs/>
@@ -30,7 +30,7 @@ export default class Container1 extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col sm={{span: 12, order: 1 }} md={{span: 12, order: 2 }} lg={{span: 7, order: 2 }} className="container1-col">
+                        <Col xs={{span: 12, order: 1 }} sm={{span: 12, order: 1 }} md={{span: 6, order: 2 }} lg={{span: 7, order: 2 }} className="container1-col">
                             <img src={Pic} alt='container1-img'/>
                         </Col>
                         
