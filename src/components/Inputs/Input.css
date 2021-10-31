@@ -10,6 +10,9 @@ option{
     padding-top: 1.2rem !important;
     padding-bottom: 5.2rem !important;
 }
+.form-select{
+    border-color: rgb(61, 179, 247) !important;
+}
 
 .input-box > .text-input{
     width: 100%;
