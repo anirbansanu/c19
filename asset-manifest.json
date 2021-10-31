@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/c19/static/css/main.8c522e30.chunk.css",
+    "main.css": "/c19/static/css/main.e9912107.chunk.css",
     "main.js": "/c19/static/js/main.e210e7b6.chunk.js",
     "main.js.map": "/c19/static/js/main.e210e7b6.chunk.js.map",
     "runtime-main.js": "/c19/static/js/runtime-main.c27e9929.js",
@@ -12,7 +12,7 @@
     "static/js/3.a3956656.chunk.js.map": "/c19/static/js/3.a3956656.chunk.js.map",
     "index.html": "/c19/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/c19/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.8c522e30.chunk.css.map": "/c19/static/css/main.8c522e30.chunk.css.map",
+    "static/css/main.e9912107.chunk.css.map": "/c19/static/css/main.e9912107.chunk.css.map",
     "static/js/2.8fc64551.chunk.js.LICENSE.txt": "/c19/static/js/2.8fc64551.chunk.js.LICENSE.txt",
     "static/media/corona-info.662e432a.png": "/c19/static/media/corona-info.662e432a.png",
     "static/media/logo.6ce24c58.svg": "/c19/static/media/logo.6ce24c58.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.c27e9929.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.8fc64551.chunk.js",
-    "static/css/main.8c522e30.chunk.css",
+    "static/css/main.e9912107.chunk.css",
     "static/js/main.e210e7b6.chunk.js"
   ]
 }
