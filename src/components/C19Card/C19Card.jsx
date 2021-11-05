@@ -34,7 +34,7 @@ export default class C19Card extends Component {
         return (
             <>
                 <Card className={`result-row border-0 bg-${this.props.cardColor} shadow ${this.state.maximize?"maximize":"minimize"}`} style={{"--insetShadow": `var(--bs-${this.props.headerColor})`}}>
-                    <Card.Header className={`bg-${this.props.headerColor} ${this.props.headerColor==="warning" || this.props.headerColor==="light" ?"text-dark":"text-white"}`}>
+                    <Card.Header className={`result-header bg-${this.props.headerColor} ${this.props.headerColor==="warning" || this.props.headerColor==="light" ?"text-dark":"text-white"}`}>
                         <Card.Title as="h5" className="pb-0">
                             Check Availability Of 💉 Slots
                         </Card.Title>
@@ -49,7 +49,7 @@ export default class C19Card extends Component {
                             }
                         </div>
                     </Card.Header>
-                    <Card.Body className={`p-0 ${this.state.expand? 'expand-card':'collapse-card'}`}>
+                    <Card.Body className={`result-body p-0 ${this.state.expand? 'expand-card':'collapse-card'}`}>
                         <div className="card m-3 p-2 border-0">
                             <div className="row">
                                 <div className="col-12 col-md-3 p-3">
