@@ -1,0 +1,70 @@
+.c19table{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+}
+.c19table-card{
+    display: none !important;
+}
+.c19table-card > .card-header{
+    display: inline-flex;
+    justify-content: space-between;
+    color: rgb(102, 101, 101);
+}
+.c19table-card .card-body{
+    box-shadow: none;
+}
+.c19table-card .card-title{
+    display: block;
+    text-align: start;
+}
+.c19table-card .card-subtitle{
+    display: block;
+    text-align: end;
+}
+.c19table-card .card-header{
+    width: 100%;
+}
+.c19table-card .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.c19table-card .dose-age{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 576px) {
+    .c19table-card .dose-age{
+        display: flex;
+        justify-content: center;
+    }
+    .c19table-card .card-title{
+        font-size: 1rem !important;
+    }
+    .c19table-card .card-subtitle{
+        font-size: 0.9rem !important;
+    }
+    .c19table-card .dose-1{
+        font-weight: bold !important;
+    }
+    .c19table-card .dose-2{
+        font-weight: bold !important;
+    }
+}
+@media (max-width: 810px) {
+    
+    .c19table-card{
+        display: block !important;
+    }
+    .c19table{
+        display: none !important;
+    }
+    .c19table-date .empty-col{
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
