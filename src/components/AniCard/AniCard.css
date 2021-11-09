@@ -1,0 +1,148 @@
+:root {
+  --ani-card-height: 300px;
+  --ani-warning: #f1c40f;
+  --ani-alert: #e7832c;
+  --ani-danger: #e74c3c;
+  --ani-secondary: #34495e;
+  --ani-purple: #9b59b6;
+  --ani-primary: #3498db;
+  --ani-success: #2ecc71;
+  --ani-info: #1abc9c;
+  --ani-white: #f8f9fa;
+  --cut-stone-white-text: rgba(255, 255, 255, 0.5);
+  --cut-stone-black-text: rgba(0, 0, 0, 0.5);
+  --cut-stone-success-text: rgba(1, 54, 23, 0.61);
+  --cut-stone-purple-text: rgba(62, 1, 87, 0.714);
+  --cut-stone-danger-text: rgba(53, 7, 1, 0.7);
+  --cut-stone-warning-text: rgba(63, 51, 1, 0.801);
+  --cut-stone-alert-text: rgba(59, 28, 1, 0.753);
+}
+/* start of bg-colors */
+.ani-bg-transparent-txt-white{
+  background-color: transparent !important;
+  color: rgba(248, 249, 250, 0.712);
+}
+.ani-bg-transparent-txt-black{
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.712);
+}
+.ani-bg-warning{
+    background: var(--ani-warning);
+    color: var(--cut-stone-warning-text);
+}
+.ani-bg-success{
+    background-color: var(--ani-success) !important;
+    color: var(--cut-stone-success-text) !important;
+}
+.ani-bg-alert{
+    background: var(--ani-alert) !important;
+    color: var(--cut-stone-alert-text) !important;
+}
+.ani-bg-danger{
+    background: var(--ani-danger) !important;
+    color: var(--cut-stone-danger-text) !important;
+}
+.ani-bg-secondary{
+    background: var(--ani-secondary) !important;
+    color: var(--ani-white) !important;
+}
+.ani-bg-purple{
+    background: var(--ani-purple) !important;
+    color: var(--cut-stone-purple-text) !important;
+}
+
+.border-purple{
+  border-color: darkviolet;
+}
+.border-alert{
+  border-color: var(--ani-alert);
+}
+/* end of bg-colors */
+
+.ani-card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.close {
+  display: none;
+}
+
+.card-tools span {
+  padding: 0.10rem 0.15rem;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.card-tools span:hover{
+  color: var(--ani-white);
+  background: rgba(0, 0, 0, 0.267);
+}
+
+.ani-card .card-content {
+  padding: 2rem 1.2rem;
+}
+.maximize {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0px !important;
+  z-index: 999;
+}
+.minimize {
+  position: relative;
+  width: 100% !important;
+  overflow-y: hidden;
+}
+.minimize .expand {
+  width: 100%;
+  height: var(--ani-card-height);
+  scrollbar-width: thin;
+  overflow-y: scroll;
+}
+
+.maximize .expand {
+  width: 100%;
+  height: 100% !important;
+  transition: height 0.5s ease-in-out;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+}
+.maximize .card-header{
+  border-radius: 0;
+}
+
+.expand::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 0px;
+	background-color: #F5F5F5;
+}
+
+.expand::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.expand::-webkit-scrollbar-thumb
+{
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #999;
+}
+
+.maximize .collapse {
+  width: 0% !important;
+  min-height: 0px !important;
+  padding: 0 !important;
+}
+.minimize .collapse {
+  width: 0% !important;
+  min-height: 0px !important;
+  padding: 0 !important;
+}
