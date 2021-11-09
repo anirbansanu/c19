@@ -26,7 +26,7 @@
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
-    scrollbar-width: 8px;
+    scrollbar-width: 10px;
     scrollbar-color: linear-gradient(131deg, rgba(124,246,93,1) 12%, rgba(51,51,51,1) 30%, rgba(51,51,51,1) 68%, rgba(238,96,247,1) 78%) transparent;
     
 
@@ -34,7 +34,7 @@
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
 
   *::-webkit-scrollbar-track {
@@ -44,6 +44,6 @@
   *::-webkit-scrollbar-thumb {
     background: linear-gradient(-85deg, rgb(60, 116, 199) 12%, rgb(38, 227, 252) 78%);
     border-radius: 10px;
-    border: 0;
-    border-color: transparent;
+    border: 2px solid ;
+    border-color: #fff;
   }

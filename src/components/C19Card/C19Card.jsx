@@ -50,23 +50,23 @@ export default class C19Card extends Component {
                         </div>
                     </Card.Header>
                     <Card.Body className={`result-body p-0 ${this.state.expand? 'expand-card':'collapse-card'}`}>
-                        <div className="card m-3 p-2 border-0">
+                        <div className="card state-filters m-3 p-2 border-0">
                             <div className="row">
                                 <div className="col-12 col-md-3 p-3">
                                     <h4>Filters</h4>
                                 </div>
                                 <div className="col-12 col-sm-4 col-md-3 text-start pl-md-3">
-                                <SelectInput label="Age" defaultOption='Select Age' optionsArray={["18 & Abobe","Below 18"]}/>
+                                <SelectInput disable="false" label="Age" defaultOption='Select Age' optionsArray={["18 & Abobe","Below 18"]}/>
                                 </div>
                                 <div className="col-12 col-sm-4 col-md-3 text-start pl-md-3">
-                                <SelectInput label="Cost" defaultOption='Select Price' optionsArray={['Free','Paid']}/>
+                                <SelectInput disable="false" label="Cost" defaultOption='Select Price' optionsArray={['Free','Paid']}/>
                                 </div>
                                 <div className="col-12 col-sm-4 col-md-3 text-start pl-md-3">
-                                    <SelectInput label="Vaccin" defaultOption='Select Vaccin' optionsArray={["Covishield","Covacin","Sputnik"]}/>
+                                    <SelectInput disable="false" label="Vaccin" defaultOption='Select Vaccin' optionsArray={["Covishield","Covacin","Sputnik"]}/>
                                 </div>
                             </div>
                         </div>
-                        <div className="card m-3 p-2 border-bottom border-0 border-secondary">
+                        <div className="card slot-details m-3 p-2 border-bottom border-0 border-secondary">
                             <div className="row">
                                 <div className="col-12 col-sm-3">
                                     <h4>Details</h4>
