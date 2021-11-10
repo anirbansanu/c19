@@ -36,7 +36,7 @@ export default class Container1 extends Component {
                         </Col>
                         
                     </Row>
-                    <C19Card expand={true} maximize={false} headerColor="info">
+                    <C19Card expand={true} maximize={false}>
                         {/* <h1>this is from Container 1</h1> */}
                     </C19Card>
                     

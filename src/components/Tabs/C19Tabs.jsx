@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Tabs,Tab } from 'react-bootstrap';
 import SelectInput from '../Inputs/SelectInput';
+import Input from '../Inputs/Input';
 
 export default class C19Tabs extends Component {
     render() {
@@ -12,7 +13,8 @@ export default class C19Tabs extends Component {
                         <SelectInput disable="true" label="Select" defaultOption='Your District' optionsArray={[]}/>
                     </Tab>
                     <Tab eventKey="By-PIN" title="By PIN">
-                        <SelectInput disable="true" label="Select" defaultOption='State' optionsArray={["West Bengal","Maharastra","J&K",'Ladak']}/>
+                        <Input label="Enter PIN" disable="true"/>
+                        <a href="/" className="btn btn-primary mb-4 mt-4 fw-bold float-end top-50" >Search</a>
                         {/* <SelectInput label="Select" defaultOption='State' optionsArray={["West Bengal","Maharastra","J&K",'Ladak']}/> */}
                     </Tab>
                     

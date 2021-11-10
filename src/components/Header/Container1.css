@@ -23,18 +23,17 @@
   }
 .container1 .nav-tabs {
     border-bottom: 0px !important;
-    color: rgb(133, 131, 131) !important;
-    box-shadow: 0 -3px 0 0 red inset;
+    color: var(--ani-dark-purple) !important;
+    box-shadow: 0 -3px 0 0 var(--ani-dark-purple) inset;
 }
 .container1 .nav-link{
  border: 0 !important;
  font-weight: bold;
- color: #777 !important; 
- box-shadow: 2 -1px 0 0 red inset;
+ color: var(--ani-dark-purple) !important;
 }
 
-.active{
-    color: rgb(13, 13, 14) !important;
+.nav-link.active{
+    color: var(--ani-dark-purple) !important;
     box-shadow: 0 -3px 0 0 rgb(40, 194, 241) inset;
     border: 0 !important;
 }

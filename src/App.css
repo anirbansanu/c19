@@ -1,25 +1,72 @@
+:root {
+  --ani-card-height: 300px;
+  --ani-warning: #f1c40f;
+  --ani-alert: #e7832c;
+  --ani-danger: #e74c3c;
+  --ani-secondary: #34495e;
+  --ani-purple: #9b59b6;
+  --ani-primary: #3498db;
+  --ani-success: #2ecc71;
+  --ani-info: #1abc9c;
+  --ani-white: #f8f9fa;
+  --ani-dark-purple: rgb(23, 4, 29);
+  --ani-dark-purple-50: rgba(76, 18, 94, 0.644);
+  --cut-stone-white-text: rgba(255, 255, 255, 0.5);
+  --cut-stone-black-text: rgba(0, 0, 0, 0.5);
+  --cut-stone-success-text: rgba(1, 54, 23, 0.61);
+  --cut-stone-purple-text: rgba(62, 1, 87, 0.714);
+  --cut-stone-danger-text: rgba(53, 7, 1, 0.7);
+  --cut-stone-warning-text: rgba(63, 51, 1, 0.801);
+  --cut-stone-alert-text: rgba(59, 28, 1, 0.753);
+}
+.shadow-none{
+  
+}
+.bg-theme-dark-purple{
+  background: var(--ani-dark-purple) !important;
+}
+.btn-theme-dark-purple{
+  background-color: var(--ani-purple) !important;
+  color: var(--ani-white);
+}
+.btn-theme-dark-purple:hover{
+  background-color: var(--ani-purple) !important;
+  color: var(--ani-white);
+}
 .navbar{
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  background: var(--ani-dark-purple);
+  color: var(--ani-white);
 }
-
+.navbar-brand{
+  color: var(--ani-white) !important;
+}
+.nav-link{
+  color: var(--ani-white) !important;
+}
 .dropdown-menu{
   font-weight: bold;
+  background: var(--ani-dark-purple);
 }
 .navbar-nav a{
   font-weight: bold;
+  color: var(--ani-white);
 }
-.dropdown-menu > a{
-  
+.dropdown-menu .dropdown-item{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  color: rgba(0, 0, 0, 0.555) !important;
+  color: var(--cut-stone-white-text) !important;
 }
-.dropdown-menu a:hover{
-  color: rgba(0, 0, 0, 0.884) !important;
+.dropdown-menu .dropdown-divider{
+  background: var(--ani-white);
+}
+.dropdown-menu .dropdown-item:hover{
+  background: var(--ani-dark-purple-50);
+  color: var(--ani-white) !important;
 }
 
 
@@ -33,17 +80,18 @@
   }
 
   /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
+  body::-webkit-scrollbar {
+    width: 6px;
   }
 
-  *::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: transparent;
   }
 
-  *::-webkit-scrollbar-thumb {
-    background: linear-gradient(-85deg, rgb(60, 116, 199) 12%, rgb(38, 227, 252) 78%);
-    border-radius: 10px;
-    border: 2px solid ;
-    border-color: #fff;
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(-85deg, rgb(65 9 122) 12%, rgb(50 3 239) 78%);
+    border-radius: 0px;
+    /* border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: #fff; */
   }

@@ -11,7 +11,7 @@ option{
     padding-bottom: 5.2rem !important;
 }
 .form-select{
-    border-color: rgb(61, 179, 247) !important;
+    border-color: var(--ani-dark-purple) !important;
 }
 
 .input-box > .text-input{
@@ -20,14 +20,14 @@ option{
     outline: none;
     padding: 0.5rem;
     border: 0;
-    border-bottom: 2px solid rgb(86, 168, 245);
+    border-bottom: 2px solid var(--ani-dark-purple);
     background: transparent;
     z-index: 2;
 }
 .input-label{
     user-select: none;
     cursor: text;
-    color: rgb(250, 46, 46);
+    color: var(--ani-dark-purple);
     background: transparent;
     transition: all 0.2s linear;
     z-index: 11;
@@ -43,5 +43,5 @@ option{
 }
 .text-input:focus ~ .input-span{
     width: 100%;
-    background: rgb(61, 179, 247);
+    background: var(--ani-dark-purple);
 }

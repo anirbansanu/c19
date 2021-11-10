@@ -37,7 +37,7 @@ export default class AniCard extends Component {
         return (
             <div className={`${this.props.transparent?this.props.transparent:""} ${this.state.close?"close":"card ani-card"} border-${this.props.headerColor} p-0 ${this.state.maximize?"maximize":"minimize"} ${this.props.className}`} style={{'--ani-card-height':this.props.height}}>
                 <div className={`card-header pb-0 ani-bg-${this.props.headerColor}`}>
-                    <h5 className='card-title fw-bold'>{this.props.title?this.props.title:'Card Title'}</h5>
+                    <h5 className='card-title pointer fw-bold' onClick={this.expandHandler}>{this.props.title?this.props.title:'Card Title'}</h5>
                     <div className='card-tools'>
                         {   this.state.tools.expandBtn?
                                 this.state.expand?

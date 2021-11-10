@@ -33,8 +33,8 @@ export default class C19Card extends Component {
     render() {
         return (
             <>
-                <Card className={`result-row border-0 bg-${this.props.cardColor} shadow ${this.state.maximize?"maximize":"minimize"}`} style={{"--insetShadow": `var(--bs-${this.props.headerColor})`}}>
-                    <Card.Header className={`result-header bg-${this.props.headerColor} ${this.props.headerColor==="warning" || this.props.headerColor==="light" ?"text-dark":"text-white"}`}>
+                <Card className={`result-row border-0 shadow ${this.state.maximize?"maximize":"minimize"}`} style={{"--insetShadow": `var(--bs-${this.props.headerColor})`}}>
+                    <Card.Header className={`result-header`} style={{background: 'var(--ani-dark-purple)', color: 'var(--ani-white)'}}>
                         <Card.Title as="h5" className="pb-0">
                             Check Availability Of 💉 Slots
                         </Card.Title>
