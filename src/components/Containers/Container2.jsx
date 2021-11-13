@@ -11,7 +11,7 @@ export default class Container2 extends Component {
                     <div className="row container2-row">
                         <div className="col-12 col-md-5 col-lg-4 bg-dark-purple">
                             <div className="card whts-new-card justify-content-center align-align-items-center text-center" style={{width:"100%",height:"100%", background:'rgb(23, 4, 29)'}} >
-                                <h1 className='pt-5 mt-5'>What's new <b>?</b></h1>
+                                <h1 className='pt-5 pt-md-0 mt-5 mt-md-0'>What's new <b>?</b></h1>
                             </div>
                         </div>
                         <div className='col-12 col-md-7 col-lg-8' style={{minHeight: '500px',height: 'auto'}}>

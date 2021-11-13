@@ -20,7 +20,7 @@
   --cut-stone-alert-text: rgba(59, 28, 1, 0.753);
 }
 .shadow-none{
-  
+  box-shadow: none;
 }
 .bg-theme-dark-purple{
   background: var(--ani-dark-purple) !important;

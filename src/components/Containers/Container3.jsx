@@ -15,8 +15,8 @@ export default class Container3 extends Component {
                                     <h2 className="card-title fw-bold">International Travel Certificate</h2>
                                     <h6 className="pt-3 pb-3">Ready to travel the world? Complete your vaccination and get a certificate now.</h6>
                                     <div className="d-flex justify-content-between">
-                                        <a href="#download" className="btn fw-bold btn-primary">How to Download</a>
-                                        <a href='#Certificate' className="btn fw-bold btn-primary">Get Certificate</a>
+                                        <a href="#download" className="btn fw-bold btn-outline-primary shadow-none">How to Download</a>
+                                        <a href='#Certificate' className="btn fw-bold btn-primary shadow-none">Get Certificate</a>
                                     </div>
                                 </div>
                             </div>

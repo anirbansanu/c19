@@ -1,33 +1,25 @@
 import React, { Component } from 'react';
-import { FloatingLabel,Form } from 'react-bootstrap';
+// import { FloatingLabel,Form } from 'react-bootstrap';
 import './Input.css';
-
 
 export default class SelectInput extends Component {
     constructor(props){
         super(props);
         this.state={
-            disable: this.props.disable===undefined?false:this.props.disable,
-            selectInput:this.props.defaultOption,
-            optionsArray: ["Bihar","Goa"],
+            disable: this.props.disable,
+            value: ""
         }
         // this.setState({optionsArray:this.props.optionsArray});
-        this.handleSelect = this.handleSelect.bind(this);
-
-    }
-    handleSelect(ev){
-        this.setState({
-            selectInput: ev.target.value
-        });
-        
     }
     
     render() {
+        // console.log(`Disable : ${this.state.disable}`);
+        // console.log(this.state.disable==="true" && this.state.disable?true:null)
         return (
             <>
-                <FloatingLabel className="mt-5 mt-sm-4 mt-md-4" controlId="floatingSelectGrid" label={this.props.label}>
-                    <Form.Select disable={this.state.disable} aria-label="Floating label select example" onChange={this.handleSelect} value={this.state.selectInput}>
-                        <option>{this.props.defaultOption}</option>
+                <div className="form-floating mt-5 mt-sm-4 mt-md-4">
+                    <select disabled={this.state.disable==="true" || this.state.disable===true?true:null} className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={this.props.selectHandler}>
+                        <option selected disabled={true}>{this.props.defaultOption}</option>
                         {
                             Array.isArray(this.props.optionsArray)?this.props.optionsArray.map(
                                 (values, index)=>{
@@ -36,9 +28,9 @@ export default class SelectInput extends Component {
                             ):<option style={{paddingTop:'5px'}}>No States</option>
                         
                         }
-                        
-                    </Form.Select>
-                </FloatingLabel>    
+                    </select>
+                    <label htmlFor="floatingSelect">{this.props.label}</label>
+                </div>
             </>
         )
     }
